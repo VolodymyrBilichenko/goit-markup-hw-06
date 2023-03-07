@@ -563,10 +563,27 @@ img {
   background: var(--frover-white);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: var(--trns-general);
+}
+.backdrop .modal-btn:focus,
+.backdrop .modal-btn:hover{
+  background-color: var(--iris-blue);
+}
+.backdrop .modal-btn:focus{
+  background-color: var(--ocean-blue);
 }
 .backdrop .modal-icon{
   width: 8px;
   height: 8px;
+}
+
+.backdrop .modal-btn:hover + .modal-icon:hover{
+  fill: white;
+}
+
+.backdrop .modal-icon:focus,
+.backdrop .modal-icon:hover{
+  fill: var(--white);
 }
 .backdrop.is-hidden .modal{
   transform: translate(-50%, -70%);
